@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Über mich</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .about-image {
+      flex: 1 1 250px;
+      background: url('https://via.placeholder.com/400x400') center/cover no-repeat;
+      min-height: 300px;
+    }
+
+    .about-text {
+      flex: 2 1 400px;
+      padding: 30px;
+    }
+
+    .about-text h1 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      color: #007acc;
+    }
+
+    .about-text p {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+      }
+
+      .about-image {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <section class="about-section">
+      <div class="about-image">
+        <!-- Dein Bild wird hier angezeigt -->
+      </div>
+      <div class="about-text">
+        <h1>Über mich</h1>
+        <p>Hier kannst du etwas über dich schreiben – z. B. wer du bist, was du machst, welche Fähigkeiten du hast oder was dich motiviert.</p>
+        <p>Nutze diesen Bereich, um deinen Besuchern ein Gefühl dafür zu geben, wer hinter dem Portfolio steckt.</p>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
